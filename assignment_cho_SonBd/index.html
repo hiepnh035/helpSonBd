@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <!-- TODO(you): Make whatever changes needed to complete the assignment! -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <head>
     <meta charset="utf-8" />
     <title>HTML Quiz</title>
@@ -41,158 +41,162 @@
     content.
 
   -->
-    <header>
-      <div class="wpr">WPR</div>
-      <div class="mern-stack">
-        <p>N</p>
-      </div>
-      <div class="mern-stack">
-        <p>R</p>
-      </div>
-      <div class="mern-stack">
-        <p>E</p>
-      </div>
-      <div class="mern-stack">
-        <p>M</p>
-      </div>
-    </header>
-
-    <article>
-      <section id="quiz-name">
-        <div class="background-img">
-          <h1>HTML Quiz</h1>
+    <div class="container">
+      <header>
+        <div class="wpr">WPR</div>
+        <div class="mern-stack">
+          <p>N</p>
         </div>
-      </section>
-      <div class="author">By Bui Truong Son</div>
-
-      <section id="introduction">
-        <h1>The Test</h1>
-        <p>The test contains 10 questions and there is no time limit.</p>
-        <p>
-          The test is not official, it's just a nice way to see how much you
-          know, or don't know, about HTML.
-        </p>
-        <h1>Count Your Score</h1>
-        <p>
-          You will get 1 point for each correct answer. At the end of the Quiz,
-          your total score will be displayed. Maximum score is 10 points.
-        </p>
-        <div class="start-section">
-          <h1>Start the quiz</h1>
-          <p>Good luck!</p>
-          <button>Start the HTML quiz ></button>
+        <div class="mern-stack">
+          <p>R</p>
         </div>
-      </section>
+        <div class="mern-stack">
+          <p>E</p>
+        </div>
+        <div class="mern-stack">
+          <p>M</p>
+        </div>
+      </header>
 
-      <section id="attempt-quiz">
-        <form>
-          <div class="question-item">
-            <h1 class="question-title">Question 1 of 10</h1>
-            <p class="question-subtitle">question 1</p>
-            <div class="options-container">
-              <div class="option-item">
-                <input
-                  onchange="handleCheck()"
-                  type="radio"
-                  name="question1"
-                  value="option1"
-                />
-                <label for="option1">option1</label>
-              </div>
-              <div class="option-item">
-                <input
-                  onchange="handleCheck()"
-                  type="radio"
-                  name="question1"
-                  value="option2"
-                />
-                <label for="option2">option2</label>
-              </div>
-              <div class="option-item">
-                <input
-                  onchange="handleCheck()"
-                  type="radio"
-                  name="question1"
-                  value="option3"
-                />
-                <label for="option3">option3</label>
-              </div>
-              <div class="option-item">
-                <input
-                  onchange="handleCheck()"
-                  type="radio"
-                  name="question1"
-                  value="option4"
-                />
-                <label for="option4">option3</label>
+      <article>
+        <section id="quiz-name">
+          <div class="background-img">
+            <h1>HTML Quiz</h1>
+          </div>
+        </section>
+        <div class="author">By Bui Truong Son</div>
+
+        <section id="introduction">
+          <h1>The Test</h1>
+          <p>The test contains 10 questions and there is no time limit.</p>
+          <p>
+            The test is not official, it's just a nice way to see how much you
+            know, or don't know, about HTML.
+          </p>
+          <h1>Count Your Score</h1>
+          <p>
+            You will get 1 point for each correct answer. At the end of the
+            Quiz, your total score will be displayed. Maximum score is 10
+            points.
+          </p>
+          <div class="start-section">
+            <h1>Start the quiz</h1>
+            <p>Good luck!</p>
+            <button>Start the HTML quiz ></button>
+          </div>
+        </section>
+
+        <section id="attempt-quiz">
+          <form>
+            <div class="question-item">
+              <h1 class="question-title">Question 1 of 10</h1>
+              <p class="question-subtitle">question 1</p>
+              <div class="options-container">
+                <div class="option-item">
+                  <input
+                    onchange="handleCheck()"
+                    type="radio"
+                    name="question1"
+                    value="option1"
+                  />
+                  <label for="option1">option1</label>
+                </div>
+                <div class="option-item">
+                  <input
+                    onchange="handleCheck()"
+                    type="radio"
+                    name="question1"
+                    value="option2"
+                  />
+                  <label for="option2">option2</label>
+                </div>
+                <div class="option-item">
+                  <input
+                    onchange="handleCheck()"
+                    type="radio"
+                    name="question1"
+                    value="option3"
+                  />
+                  <label for="option3">option3</label>
+                </div>
+                <div class="option-item">
+                  <input
+                    onchange="handleCheck()"
+                    type="radio"
+                    name="question1"
+                    value="option4"
+                  />
+                  <label for="option4">option3</label>
+                </div>
               </div>
             </div>
-          </div>
-        </form>
-      </section>
+            <div class="btn-container">
+              <button type="submit" class="submit-btn">
+                Submit your answer >
+              </button>
+            </div>
+          </form>
+        </section>
 
-      <section id="review-quiz">
-        <form>
-          <div class="question-item">
-            <h1 class="question-title">Question 2 of 10</h1>
-            <p class="question-subtitle">question 1</p>
-            <div class="options-container">
-              <div class="option-item match">
-                <input
-                  disabled
-                  onchange="handleCheck()"
-                  type="radio"
-                  name="question1"
-                  value="option1"
-                />
-                <label for="option1">option1</label>
-                <p class="result-message">Correct answer</p>
-              </div>
-              <div class="option-item correct">
-                <input
-                  disabled
-                  onchange="handleCheck()"
-                  type="radio"
-                  name="question1"
-                  value="option2"
-                />
-                <label for="option2">option2</label>
-                <p class="result-message">Correct answer</p>
-              </div>
-              <div class="option-item wrong">
-                <input
-                  disabled
-                  checked
-                  onchange="handleCheck()"
-                  type="radio"
-                  name="question1"
-                  value="option3"
-                />
-                <label for="option3">option3</label>
-                <p class="result-message">Your answer</p>
-              </div>
-              <div class="option-item">
-                <input
-                  disabled
-                  onchange="handleCheck()"
-                  type="radio"
-                  name="question1"
-                  value="option4"
-                />
-                <label for="option4">option3</label>
+        <section id="review-quiz">
+          <form>
+            <div class="question-item">
+              <h1 class="question-title">Question 2 of 10</h1>
+              <p class="question-subtitle">question 1</p>
+              <div class="options-container">
+                <div class="option-item match">
+                  <input
+                    disabled
+                    type="radio"
+                    name="question1"
+                    value="option1"
+                  />
+                  <label for="option1">option1</label>
+                  <p class="result-message">Correct answer</p>
+                </div>
+                <div class="option-item correct">
+                  <input
+                    disabled
+                    type="radio"
+                    name="question1"
+                    value="option2"
+                  />
+                  <label for="option2">option2</label>
+                  <p class="result-message">Correct answer</p>
+                </div>
+                <div class="option-item wrong">
+                  <input
+                    disabled
+                    checked
+                    type="radio"
+                    name="question1"
+                    value="option3"
+                  />
+                  <label for="option3">option3</label>
+                  <p class="result-message">Your answer</p>
+                </div>
+                <div class="option-item">
+                  <input
+                    disabled
+                    type="radio"
+                    name="question1"
+                    value="option4"
+                  />
+                  <label for="option4">option3</label>
+                </div>
               </div>
             </div>
-          </div>
-        </form>
+          </form>
+          <div class="result-box">
+            <h1>Result:</h1>
+            <p class="result-score">1/10</p>
+            <b>10%</b>
+            <p>Practice more to improve it :D</p>
 
-        <div class="result-box">
-          <h1>Result:</h1>
-          <p class="result-score">1/10</p>
-          <b>10%</b>
-          <p>Practice more to improve it :D</p>
-          <button class="retry-btn">Try again</button>
-        </div>
-      </section>
-    </article>
+            <button class="retry-btn">Try again</button>
+          </div>
+        </section>
+      </article>
+    </div>
   </body>
 </html>

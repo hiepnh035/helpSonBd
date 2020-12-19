@@ -2,6 +2,11 @@
 body {
   font-size: 18px;
 }
+.container {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
 header {
   height: 80px;
   font-size: 32px;
@@ -37,13 +42,15 @@ header .mern-stack p {
   align-items: center;
   justify-content: center;
   display: flex;
+  position: relative;
 }
 
 #quiz-name .background-img {
   width: 100%;
-  height: 600px;
+  height: 425px;
   background-image: url(./images/background.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: middle;
 }
 
 #quiz-name h1 {
@@ -55,7 +62,7 @@ header .mern-stack p {
   text-align: center;
   margin: 0;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -74,7 +81,7 @@ header .mern-stack p {
 }
 
 .start-section button {
-  background-color: dodgerblue;
+  background-color: #2196f3;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -89,8 +96,26 @@ header .mern-stack p {
 }
 
 .start-section button:hover {
-  background-color: white;
-  color: black;
+  background-color: #0d8bf2;
+}
+.btn-container {
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #46a049;
 }
 
 .question-item {
@@ -133,7 +158,29 @@ header .mern-stack p {
 }
 .retry-btn {
   background-color: #2196f3;
-  color: white;
-  padding: 10px;
   border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 0.25em 0;
+}
+.retry-btn:hover {
+  background-color: #0d8bf2;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  header .mern-stack {
+    display: none;
+  }
 }
