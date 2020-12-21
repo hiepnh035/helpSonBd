@@ -1,94 +1,194 @@
 /* TODO(you): Write the CSS to finish the assignment! */
 body {
-    font-size: 18px;
+  font-size: 18px;
+}
+.container {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 header {
-    height: 80px;
-    font-size: 32px;
-    font-weight: 600;
-    overflow: hidden;
-    display: block;
+  height: 80px;
+  font-size: 32px;
+  font-weight: 600;
+  overflow: hidden;
+  display: block;
 }
 
 header .wpr {
-    color: #ee3322;
-    float: left;
+  color: #ee3322;
+  float: left;
 }
 
 header .mern-stack {
-    float: right;
-    border-radius: 100%;
-    background-color: #ffee00;
-    width: 50px;
-    height: 50px;
-    margin: 0px 0px 0px 5px;
-    align-items: center;
-    justify-content: center;
+  float: right;
+  border-radius: 100%;
+  background-color: #ffee00;
+  width: 50px;
+  height: 50px;
+  margin: 0px 0px 0px 5px;
+  align-items: center;
+  justify-content: center;
 }
 
 header .mern-stack p {
-    transform: rotate(-30deg);
-    margin: 0;
-    text-align: center;
-    padding: 7px 0;
+  transform: rotate(-30deg);
+  margin: 0;
+  text-align: center;
+  padding: 7px 0;
 }
 
 #quiz-name {
-    align-items: center;
-    justify-content: center;
-    display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
 }
 
 #quiz-name .background-img {
-    width: 100%;
-    height: 600px;
-    background-image: url(./images/background.jpg);
-    background-size: 100% 100%;
+  width: 100%;
+  height: 425px;
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  background-position: middle;
 }
 
 #quiz-name h1 {
-    background-color: rgba(255, 255, 255, 0.9);
-    font-family: 'Pangolin', 'Trebuchet MS', cursive;
-    font-size: 60px;
-    color: black;
-    padding: 10px;
-    text-align: center;
-    margin: 0;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  font-family: "Pangolin", "Trebuchet MS", cursive;
+  font-size: 60px;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .author {
-    text-align: center;
-    padding: 10px 0;
+  text-align: center;
+  padding: 10px 0;
 }
 
 .start-section {
-    background-color: lightslategrey;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px 0px;
+  background-color: lightslategrey;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0px;
 }
 
 .start-section button {
-    background-color: dodgerblue;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    margin: .25em 0;
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 0.25em 0;
 }
 
 .start-section button:hover {
-    background-color: white;
-    color: black;
+  background-color: #0d8bf2;
+}
+.btn-container {
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #46a049;
+}
+
+#attempt-quiz {
+    display: none;
+}
+
+#review-quiz {
+    display: none;
+}
+
+.question-item {
+}
+.options-container {
+  padding: 30px 0;
+}
+.option-item {
+  position: relative;
+  padding: 15px;
+  margin-bottom: 1px;
+  background-color: #f1f1f1;
+}
+.option-item:hover {
+  background-color: #ddd;
+}
+.option-item.match {
+  background-color: #d4edda;
+}
+.option-item.wrong {
+  background-color: #f8d7da;
+}
+.result-message {
+  position: absolute;
+  right: 10px;
+  top: -10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 5px;
+}
+.result-box {
+  margin: 20px 0;
+  text-align: center;
+  background-color: #f1f1f1;
+  border: 1px solid #dcdcdc;
+  padding: 20px 0;
+}
+.result-score {
+  font-size: 24px;
+}
+.retry-btn {
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 0.25em 0;
+}
+.retry-btn:hover {
+  background-color: #0d8bf2;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 95%;
   }
+}
+@media (max-width: 500px) {
+  header .mern-stack {
+    display: none;
+  }
+}
